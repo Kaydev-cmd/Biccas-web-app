@@ -1,0 +1,148 @@
+/* Navbar */
+
+.navbar-content-menu-wrapper {
+  display: none;
+}
+
+.navbar-content,
+.navbar-content-links nav ul,
+.navbar-content-btns {
+  display: flex;
+}
+
+.navbar-content,
+.navbar-content-btns {
+  align-items: center;
+}
+
+.navbar-content-heading a,
+.navbar-content-links nav ul li a {
+  text-decoration: none;
+}
+
+.navbar-content-links nav ul li a,
+.navbar-content-login-btn button,
+.navbar-content-sign-up-btn button {
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-content-links nav ul li a:hover,
+.navbar-content-login-btn button:hover {
+  color: #000;
+  font-weight: 700;
+}
+
+.navbar-content-login-btn button,
+.navbar-content-sign-up-btn button {
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-content-links nav ul li a,
+.navbar-content-login-btn button {
+  color: #a6a6a6;
+}
+
+.navbar-content {
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar-content-heading a h1 {
+  font-size: 38px;
+  text-transform: none;
+  color: #54bd95;
+}
+
+.navbar-content-links nav ul {
+  gap: 40px;
+}
+
+.navbar-content-links nav ul li {
+  list-style: none;
+}
+
+.navbar-content-btns {
+  gap: 10px;
+}
+
+.navbar-content-login-btn button {
+  background-color: #f5f5f5;
+  font-size: 16px;
+}
+
+.navbar-content-sign-up-btn button {
+  background-color: #54bd95;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.navbar-content-sign-up-btn button:hover {
+  opacity: 0.8;
+}
+
+/* Media Queries */
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  /* Navbar */
+  .navbar-content-heading a h1 {
+    font-size: 28px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  /* Navbar */
+  .navbar-content-heading a h1 {
+    font-size: 22px;
+  }
+  .navbar-content-links nav ul li a,
+  .navbar-content-login-btn button {
+    font-size: 14px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  /* Navbar */
+  .navbar-content-btns,
+  .navbar-content-links-wrapper {
+    display: none;
+  }
+  .navbar-content-menu-wrapper,
+  .navbar-content-menu {
+    display: flex;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
